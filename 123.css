@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+}
+
+.banner{
+    width:100%;
+    height:100vh;
+    background-image: url(images/sea.jpeg);
+    background-position:center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo{
+    width:300px;
+    cursor:pointer;
+}
+
+.navbar{
+    width:85%;
+    height:15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button{
+    color: #ffffff;
+    padding: 20px 35px;
+    background: transparent;
+    border-radius: 50px;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+}
+
+.content{
+    color: white;
+    position: relative;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+
+h1{
+    font-size: 80px;
+}
+
+.fishs img{
+    width: 400px;
+    animation: fish 10s linear infinite;
+}
+
+.fishs{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70px;
+    transform: translate(-100%);
+    transform: rotate(-5deg);
+}
+@keyframes fish{
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-80vh);
+        opacity: 0;
+
+    }
+
+
+
+}
+
+.fishs img:nth-child(1){
+    animation-delay: 3s;
+    width: 400px;
+}
+
+.fishs img:nth-child(2){
+    animation-delay: 5s;
+    width: 300px;
+}
+
+.fishs img:nth-child(3){
+    animation-delay: 7s;
+    width: 200px;
+}
